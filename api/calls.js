@@ -132,6 +132,15 @@ module.exports = {
     },
     method: 'GET'
   },
+  getRecentDayTrades: {
+    description: ' Get the user\'s recent day trades',
+    path: '/accounts/%account_number%/recent_day_trades/',
+    fields: {
+      account_number: {
+        required: true
+      }
+    }
+  },
   getHistoricals: {
     description: 'Get the user\'s portfolio historicals',
     path: '/portfolios/historicals/%account_number%/',
