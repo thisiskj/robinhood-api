@@ -129,7 +129,8 @@ class RobinHood{
 
          return self.parseResult(result);
       }catch(e){
-         console.error(e.error)
+         console.error('Status Code:', e.statusCode)
+         console.error('Error:', e.error)
          console.trace('Trace...')
          if('error' in e){
            if(typeof e.error === 'object'){
